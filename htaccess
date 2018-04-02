@@ -1,0 +1,12 @@
+# muita atencao neste arquivo que pode ser a fonte
+# do insucesso da aplicacao inteira
+# arquivo que pode variar dependendo do servidor
+# forma simples de mapear o index
+# muitos erros podem ocorrer pela ma configuracao deste arquivo 
+# fiquem atentos
+# nomear arquivo inicial
+# impede que outros arquivos de sobresair ao index.php
+DirectoryIndex index.php 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ index.php?pag=$1 [NC,L]
