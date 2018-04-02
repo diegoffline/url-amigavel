@@ -1,4 +1,4 @@
-# url-amigavel
+# URL amigavel
 
 ## Aplicação desenvolvida em PHP
 
